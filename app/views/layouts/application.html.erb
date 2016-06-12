@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>量化之星</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= csrf_meta_tags %>
+  <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+  <style type="text/css">
+    /* TurboGears flash bootstrap look */
+    #flash > div {
+      padding: 8px 35px 8px 14px;
+      margin-bottom: 20px;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+      background-color: #fcf8e3;
+      border: 1px solid #fbeed5;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      color: #c09853;
+    }
+
+    #flash > .ok {
+      color: #468847;
+      background-color: #dff0d8;
+      border-color: #d6e9c6;
+    }
+
+    #flash > .error {
+      color: #b94a48;
+      background-color: #f2dede;
+      border-color: #eed3d7;
+    }
+
+    #flash > .info {
+      color: #3a87ad;
+      background-color: #d9edf7;
+      border-color: #bce8f1;
+    }
+
+    /* Footer styling */
+    .footer {
+      margin-top: 45px;
+      padding: 35px 30px 36px;
+      border-top: 1px solid #e5e5e5;
+    }
+
+    .footer p {
+      margin-bottom: 0;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<%= yield %>
+<!-- Footer -->
+<footer class="footer hidden-xs hidden-sm">
+
+  <p>Copyright &copy; 量化之星 2016</p>
+</footer>
+<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+
+</body>
+</html>
